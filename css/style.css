@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.name {
+  font-family: 'Nothing You Could Do', cursive;
+  text-align: center;
+  color: #a0d6b4;
+  margin-top: 0;
+  padding-top: 10px;
+  width: 100%;
+  font-size: 3em;
+}
+
+.nav-elements a {
+  margin: auto;
+  text-decoration: none;
+  font-family: 'Nothing You Could Do', cursive;
+  color: #a0d6b4;
+  font-size: 1.5em;
+}
+
+.nav-elements li {
+  float: none;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 4px;
+
+}
+
+.navigation {
+  border-bottom: solid 2px #a0d6b4;
+ 
+}
+
+.navigation ul {
+  width: 90%;
+  padding: 0;
+  margin: auto;
+}
+
+.newsletter-banner {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #5f9ea0;
+  color: white;
+  text-align: center;
+  padding: 1% 0;
+}
+
+.newsletter-banner p {
+  display: inline-block;
+  border: 2px solid;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-align: center;
+}
+
+.home-image {
+   width: 100%;
+   background-size: 100% 100%;
+   
+}
+
+
+.intro {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+
+  padding: 0 5%;
+}
+
+  
+
+.kids {
+  width: 100%;
+   background-size: 100% 100%;
+   margin-bottom: 0;
+   padding-bottom: 0;
+
+}
+
+.newsletter {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #5f9ea0;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  }
+
+  .newsletter h2 {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+.sign-up {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #9fabb7;
+  width: 100%;
+  min-height: 30px;
+  padding-top: 20px;
+  position: relative;
+  
+}
+
+.footer-div {
+
+}
+
+ul.footer-icons { 
+  list-style: none 
+  background-size: 100%; 
+  
+}
+
+ul.footer-icons li { 
+  display: inline ;
+}
+
+a.social {
+  margin: 0 auto; 
+}
+
+a.facebook {
+  background: url(images/facebook_mobile.png) no-repeat;
+  background-position: top center;
+}
+
+a.instagram {
+  background: url(images/instagram_mobile.png) no-repeat;
+  background-position: top center;
+}
+
+a.twitter {
+  background: url(images/twitter_mobile.png) no-repeat;
+  background-position: top center;
+}
+
+ul.footer-icons li a { 
+  margin-right: 5%; 
+  width: 32px; 
+  height: 32px; 
+  display: inline-block; 
+  text-indent: -9999px;
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: .5em;
+  color: #d3d3d3;
+}
+
+
+@media all and (min-width: 768px) {
+
+
+}
+
+
+
+@media all and (min-width: 1024px) {
+
+
+}
