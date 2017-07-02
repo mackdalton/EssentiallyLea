@@ -14,11 +14,23 @@ body, html {
   height: 100%;
 }
 
+p,
+a,
+h1,
+h2,
+h3 {
+  font-family: 'Shadows Into Light', cursive;
+  color: #333;
+  letter-spacing: .1em;
+}
+
+
+ 
 
 .name {
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Shadows Into Light', cursive;
   text-align: center;
-  color: #a0d6b4;
+  color: #5C9CD1;
   margin-top: 0;
   padding-top: 10px;
   width: 100%;
@@ -28,22 +40,21 @@ body, html {
 .nav-elements a {
   margin: auto;
   text-decoration: none;
-  font-family: 'Nothing You Could Do', cursive;
-  color: #a0d6b4;
+  color: #5C9CD1;
   font-size: 1.5em;
 }
 
 .nav-elements li {
+  display: block;
   float: none;
   margin: auto;
   text-align: center;
-  display: block;
   margin-bottom: 4px;
 
 }
 
 .navigation {
-  border-bottom: solid 2px #a0d6b4;
+  border-bottom: solid 1px #5C9CD1;
  
 }
 
@@ -55,9 +66,7 @@ body, html {
 
 .newsletter-banner {
   width: 100%;
-  font-family: 'Raleway', sans-serif;
-  background-color: #5f9ea0;
-  color: white;
+  color: #5C9CD1;
   text-align: center;
   padding: 1% 0;
 }
@@ -78,10 +87,10 @@ body, html {
 
 
 .intro {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 
   padding: 0 5%;
+  margin-bottom: 4em;
 }
 
   
@@ -96,11 +105,9 @@ body, html {
 
 .newsletter {
   width: 100%;
-  font-family: 'Raleway', sans-serif;
-  background-color: #5f9ea0;
-  color: white;
   text-align: center;
   margin-top: 0;
+  background-color: #a8cae7;
   }
 
   .newsletter h2 {
@@ -108,59 +115,75 @@ body, html {
     padding-top: 10px;
   }
 
-.sign-up {
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  .newsletter h2,
+  .newsletter p {
+    color: white;
+  }
+
+button {
+  
+  display: inline-block;
+  border: 2px solid;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-align: center;
+    color: #fff;
+    margin: 2% auto;
+}
+
+button:hover {
+  background-color: #5C9CD1;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 footer {
-  background-color: #9fabb7;
+  background-color: #5C9CD1;
   width: 100%;
   min-height: 30px;
   padding-top: 20px;
-  position: relative;
+  margin-bottom: 0;
+
   
 }
 
-.footer-div {
 
+
+.footer-icons {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: .5em auto;
 }
 
-ul.footer-icons { 
-  list-style: none 
-  background-size: 100%; 
-  
+.social {
+  width: 30px;
+    height: 30px;
+    text-indent: -999em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 2em;
+    text-decoration: none;
 }
 
-ul.footer-icons li { 
-  display: inline ;
+.social:hover {
+  -webkit-transform: rotate(20deg);
 }
 
-a.social {
-  margin: 0 auto; 
+.facebook {
+  background: url(../images/facebook_mobile.png) no-repeat;
 }
 
-a.facebook {
-  background: url(images/facebook_mobile.png) no-repeat;
-  background-position: top center;
+.instagram {
+  background: url(../images/instagram_mobile.png) no-repeat;
 }
 
-a.instagram {
-  background: url(images/instagram_mobile.png) no-repeat;
-  background-position: top center;
-}
-
-a.twitter {
-  background: url(images/twitter_mobile.png) no-repeat;
-  background-position: top center;
-}
-
-ul.footer-icons li a { 
-  margin-right: 5%; 
-  width: 32px; 
-  height: 32px; 
-  display: inline-block; 
-  text-indent: -9999px;
+.twitter {
+  background: url(../images/twitter_mobile.png) no-repeat;
 }
 
 
@@ -168,17 +191,231 @@ ul.footer-icons li a {
   text-align: center;
   font-size: .5em;
   color: #d3d3d3;
+  margin-top: 3em;
 }
 
 
+/* Connect page */
+
+
+.connect-hello h1,
+.connect-email h2,
+.social-connect h2 {
+  text-align: center;
+  color: #5C9CD1;
+}
+
+.connect-hello p,
+.connect-email p,
+.join-tribe p {
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: 4em;
+
+}
+
+
+.connect-insta iframe {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-insta {
+  margin-bottom: 20px;
+}
+
+
+
+
+.fb-page{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.connect-email {
+  margin-top: 10px; 
+
+}
+
+
+.join-tribe {
+  
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0;
+  background-color: #cee1f1;
+  padding-bottom: 2%;
+}
+
+.join-tribe a {
+  text-decoration: none;
+}
+
+
+.join-tribe p {
+  padding: 10px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+
+
+  .tribe-button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+/* Blog Page */
+
+.blog-welcome h1 {
+  text-align: center;
+  color: #5C9CD1;
+}
+
+.blog-welcome p {
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: 4em;
+}
+
+.kids {
+  width: 100%;
+}
 @media all and (min-width: 768px) {
 
+  
+  p {
+    margin: auto 10%;
+  }
+
+
+.navagation {
+  display: inline-block;
+  width: 100%
+  margin: auto;
+  }
+
+
+.name {
+  float: left;
+  width: auto;
+  margin-left: .8em;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+.navigation ul {
+  padding-top: .5em;
+  width: auto;
+  float: right;
 
 }
+
+.nav-elements li {
+  display: inline;
+  margin: 0 .8em;
+}
+
+.col {
+    display: inline-block;
+    width: 45%;
+    
+    vertical-align: top;
+  }
+
+  
+
+  .col p {
+    text-align: left;
+  }
+
+  .col.two {
+    margin-left: 2em;
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
+    padding-right: .8em;
+  }
+
+  .col.one {
+    margin-right: 2em;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: .8em;
+  }
+
+
+
+
+.social {
+  width: 45px;
+  height: 45px;
+}
+  .facebook {
+  background: url(../images/facebook_tablet.png) no-repeat;
+}
+
+.instagram {
+  background: url(../images/instagram_tablet.png) no-repeat;
+}
+
+.twitter {
+  background: url(../images/twitter_tablet.png) no-repeat;
+}
+
+
+/* Connect page */
+
+
 
 
 
 @media all and (min-width: 1024px) {
 
+
+.col p {
+    text-align: left;
+    line-height: 2em;
+  }
+
+  .col.two {
+    margin-left: 3em;
+    margin-right: 2em;
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
+    padding-right: 1em;
+  }
+
+  .col.one {
+    margin-left: 2em;
+    margin-right: 3em;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 1em;
+  }
+
+
+.social {
+  width: 60px;
+  height: 60px;
+}
+  .facebook {
+  background-image: url(../images/Facebook.png);
+  z-index: 100;
+}
+
+.instagram {
+  background: url(../images/instagram.png) no-repeat;
+}
+
+.twitter {
+  background: url(../images/twitter.png) no-repeat;
+}
 
 }
