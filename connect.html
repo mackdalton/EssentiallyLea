@@ -6,8 +6,9 @@
   <title>Essentially Lea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- put your font css above the regular and sometimes you can avoid that flash of text thingy -->
   <link href="http://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   </head>
 
   <header id="home">
@@ -27,13 +28,6 @@
 <body>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1035101466624259";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
@@ -46,7 +40,7 @@
     
 
     <div class="connect-insta clearfix">
-    <!-- LightWidget WIDGET --><script class="clearfix" src="http://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/42236f39d35b556aa58f59f18e5e29b0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 80%; border: 0; overflow: hidden;"></iframe>
+    <!-- LightWidget WIDGET --><iframe src="http://lightwidget.com/widgets/42236f39d35b556aa58f59f18e5e29b0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 80%; border: 0; overflow: hidden;"></iframe>
 
     </div>
 
@@ -66,16 +60,18 @@
 
 
     <div class="join-tribe">
-      <p>If you are a seasoned essential oil user and want to join my team, you can do so by clicking <a href="essentiallylea.com" target="_blank">HERE.</a> No pressure at all, but it is a good way to start getting wholesale prices on your oils. You don't have to evangelize(though if you love them, why not?!?), sign anyone up, have your brother make a website, or do any social media marketing. You can just do it for yourself -- and your wallet!</p>
+      <p>If you are a seasoned essential oil user and want to join my team, you can do so by clicking <a href="essentiallylea.com">HERE.</a> No pressure at all, but it is a good way to start getting wholesale prices on your oils. You don't have to evangelize(though if you love them, why not?!?), sign anyone up, have your brother make a website, or do any social media marketing. You can just do it for yourself -- and your wallet!</p>
 
-        <a href="https://www.mydoterra.com/essentiallylea/#/joinAndSave" target="_blank"><button class="tribe-button">Team Up</button></a>
-      
+      <div class="tribe-button">
+        <p>
+        <a href="https://www.mydoterra.com/essentiallylea/#/joinAndSave">Team Up</a></p>
+      </div>
       </div>
 
       <div class="newsletter">
        <h2>I have an E-book!</h2>
         <p>Sign up to learn the basics and receive oil updates from me.</p>
-        <a href="http://essentiallylea.synduit.com/bbook0001" target="_blank"><button class="sign-up">Gimme the goods!</button></a>
+        <p class="sign-up">Gimme the goods!</p>
       </div>
 
   <footer>
@@ -88,5 +84,19 @@
       <p class="copyright">Copyright 2016, Mack Dalton</p>
     
     </footer>
+
+
+    <!-- try to put your javascript at the bottom, when you put it inline, sometimes it hangs the load of the page, you can see this if you put this thing back at the top and compare it -->
+    <script class="clearfix" src="http://lightwidget.com/widgets/lightwidget.js"></script>
+    
+    <!-- this file is getting a 404, maybe just because you're loading it local, have you tried it when it's uploaded somewhere? maybe it will work -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1035101466624259";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   </body>
   </html>
